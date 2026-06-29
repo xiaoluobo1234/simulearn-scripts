@@ -1,0 +1,55 @@
+# SimuLearn Scripts — Python 依赖
+# ===================================
+# 安装：pip install -r requirements.txt
+# 注：标记为 [opt] 的包为可选，仅在特定章节需要
+
+# ── 核心科学计算 ──
+numpy>=1.26,<2.0
+scipy>=1.12
+pandas>=2.1
+matplotlib>=3.8
+
+# ── 文件与数据 ──
+h5py>=3.10          # [opt] HDF5 读写（中级第25课、高级）
+xarray>=2024.1      # [opt] NetCDF（中级第25课）
+openpyxl>=3.1       # Excel 读写
+
+# ── ANSYS 接口 ──
+ansys-mapdl-core>=0.68     # [opt] PyMAPDL（中级第6课+）
+ansys-dpf-core>=0.9        # [opt] DPF（中级第7课+）
+ansys-system-coupling-core>=0.5  # [opt] System Coupling（高级）
+ansys-fluent-core>=0.20    # [opt] PyFluent（中级第22课）
+
+# ── 可视化 ──
+pyvista>=0.43       # [opt] 3D 可视化（中级第10课）
+streamlit>=1.30     # [opt] 交互看板（中级第28课）
+
+# ── 数据库 ──
+
+# ── Web / API / 通信 ──
+fastapi>=0.109      # [opt] 仿真 API（高级第15课）
+uvicorn>=0.27       # [opt] ASGI 服务器
+paho-mqtt>=1.6      # [opt] MQTT（高级第27课）
+opcua>=0.98         # [opt] OPC UA（高级第34课）
+pymodbus>=3.6       # [opt] Modbus（高级第35课）
+
+# ── 测试与质量 ──
+pytest>=8.0
+hypothesis>=6.90    # [opt] 属性测试（高级第28课）
+
+# ── 性能加速 ──
+numba>=0.58         # [opt] JIT 编译（高级第8课）
+
+# ── ML ──
+scikit-learn>=1.4   # [opt] 代理模型（高级第18课）
+onnxruntime>=1.17   # [opt] 模型部署（高级第33课）
+
+# ── 文档 ──
+sphinx>=7.2         # [opt] 文档生成（高级第17课）
+
+# ── 环境管理 ──
+python-dotenv>=1.0  # 密钥管理（高级第30课）
+
+# ── 报告生成 ──
+python-docx>=1.1    # [opt] Word 报告（中级第11课）
+jinja2>=3.1
